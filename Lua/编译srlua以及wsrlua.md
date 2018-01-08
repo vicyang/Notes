@@ -39,11 +39,11 @@
   
   pause
   ```
-    
+      
   Notes:  
   1. windres和图标生成有关，参考自：[让你用GCC编译的程序拥有一个自定义的.ico图标 ](http://blog.csdn.net/mzlogin/article/details/6647460)  
   2. -llua -lm 参考自 srlua-master/Makefile  
   原先的 Makefile 编译参数中含有 -ldl，编译提示 `cannot find -ldl`，似乎是 linux 下的库，去掉后编译通过。  
-  3. gcc 编译程序如果不想带终端提示符，加上 -mwindows 参数  
+  3. 编译 wsrlua 时，加 -mwindows 参数以使程序运行时不显示终端。  
   
   
